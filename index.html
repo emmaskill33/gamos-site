@@ -1,22 +1,114 @@
 <!DOCTYPE html>
 <html lang="el">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Πρόσκληση Γάμου - Βασίλειος & Ερμιόνη</title>
   <style>
-    body { font-family: sans-serif; background: #f9f7f6; padding: 20px; }
-    .box { background: white; max-width: 700px; margin: auto; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px #ccc; }
-    h1, h2 { color: #b85b4a; }
-    .btn { display: inline-block; margin-top: 15px; background: #b85b4a; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
-    audio { margin-top: 20px; width: 100%; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0e6f6;
+      margin: 0;
+      padding: 0;
+      color: #4b3b5a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      background: white;
+      max-width: 600px;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(75, 59, 90, 0.2);
+      text-align: center;
+    }
+    h1 {
+      font-family: 'Georgia', serif;
+      font-weight: 700;
+      font-size: 2.5rem;
+      margin-bottom: 5px;
+      color: #7a5cae;
+    }
+    h2 {
+      margin-top: 0;
+      font-weight: 400;
+      font-size: 1.4rem;
+      color: #a67ad1;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+    .rsvp-button {
+      display: inline-block;
+      padding: 12px 30px;
+      background-color: #7a5cae;
+      color: white;
+      font-weight: 600;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 4px 12px rgba(122, 92, 174, 0.4);
+      margin-bottom: 30px;
+    }
+    .rsvp-button:hover {
+      background-color: #5c4099;
+      box-shadow: 0 6px 15px rgba(92, 64, 153, 0.6);
+    }
+    .images {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+    .images img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(122, 92, 174, 0.3);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .images img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(122, 92, 174, 0.5);
+    }
+    audio {
+      width: 100%;
+      outline: none;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(122, 92, 174, 0.2);
+    }
   </style>
 </head>
 <body>
-  <div class="box">
-    <h1>Πρόσκληση Γάμου</h1>
-    <h2>Βασίλειος Εμμανουήλ & Ερμιόνη Μπαϊμπουρίδου</h2>
-    <p>Με χαρά σας προσκαλούμε στον γάμο μας στις <strong>28 Δεκεμβρίου 2025</strong>, στην εκκλησία <strong>Αγίου Χριστοφόρου</strong>, Πτολεμαΐδα, ώρα 17:00.</p>
-    <a class="btn" href="https://forms.gle/your-form-link" target="_blank">Απαντήστε στην πρόσκληση (RSVP)</a>
+  <div class="container">
+    <h1>Βασίλειος Εμμανουήλ & Ερμιόνη Μπαϊμπουρίδου</h1>
+    <h2>Πρόσκληση Γάμου</h2>
+    <p>
+      Σας προσκαλούμε με χαρά στον γάμο μας, που θα γίνει στις <strong>28 Δεκεμβρίου 2025</strong> στην εκκλησία <strong>Άγιος Χριστόφορος</strong>, Πτολεμαΐδα.
+    </p>
+
+    <!-- Χώρος για εικόνες -->
+    <div class="images">
+      <!-- Μόλις ανεβάσεις εικόνες, βάλε εδώ <img> tags -->
+      <!-- Παράδειγμα: <img src="photo1.jpg" alt="Φωτογραφία γάμου" /> -->
+    </div>
+
+    <a href="https://forms.gle/your-form-link" target="_blank" class="rsvp-button">
+      Απάντησε στην Πρόσκληση (RSVP)
+    </a>
+
     <audio controls autoplay loop>
-      <source src="https://www.soundhelix
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg" />
+      Η συσκευή σας δεν υποστηρίζει την αναπαραγωγή ήχου.
+    </audio>
+  </div>
+</body>
+</html>
